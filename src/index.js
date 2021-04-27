@@ -24,6 +24,9 @@ const Index = () => (
         <Route exact path="/" component={App} />
         <Route path="/resources" component={Resources} />
         <Route path="/hall-of-fame" component={Gallery} />
+        <Route path="/competitions">
+          <Resource resource={competitions} />
+        </Route>
         <Route path="/lesson-one">
           <Lesson lesson={lesson_one} />
         </Route>
