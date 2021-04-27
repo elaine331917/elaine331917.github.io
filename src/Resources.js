@@ -5,7 +5,7 @@ const Resources = () => {
     {
       path: "/competitions",
       name: "Competitions",
-    }
+    },
   ];
 
   return (
