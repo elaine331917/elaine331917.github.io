@@ -13,6 +13,7 @@ import {
   lesson_two,
   lesson_three,
   lesson_four,
+  competitions,
 } from "./data/markdown";
 
 import "./index.css";
