@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 const Header = () => {
   const pages = [
     { name: "About", path: "/about" },
-    { name: "Resources", path: "/resources" },
   ];
 
   return (
