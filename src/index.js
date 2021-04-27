@@ -7,6 +7,7 @@ import App from "./App";
 import Gallery from "./Gallery";
 import Lesson from "./Lesson";
 import Resources from "./Resources";
+import Resource from "./Resource";
 import {
   lesson_one,
   lesson_two,
