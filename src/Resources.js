@@ -11,7 +11,7 @@ const Resources = () => {
   return (
     <div className="home">
       <div id="content">
-        {lesson_map.map(({ path, name }) => (
+        {resource_map.map(({ path, name }) => (
           <Link to={path}>
             <li>{name}</li>
           </Link>

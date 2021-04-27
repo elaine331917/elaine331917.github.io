@@ -1,4 +1,4 @@
-const frontpage = `#Introduction
+const frontpage = `# Introduction
 
 Welcome to So You Want to Learn About Figure Skating.
 
