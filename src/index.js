@@ -5,8 +5,8 @@ import { BrowserRouter, Route } from "react-router-dom";
 import { Header, Footer } from "./components";
 import App from "./App";
 import Gallery from "./Gallery";
-import Lessons from "./Lessons";
 import Lesson from "./Lesson";
+import Resources from "./Resources";
 import {
   lesson_one,
   lesson_two,
@@ -22,7 +22,7 @@ const Index = () => (
       <Header />
       <div>
         <Route exact path="/" component={App} />
-        <Route path="/lessons" component={Lessons} />
+        <Route path="/resources" component={Resources} />
         <Route path="/hall-of-fame" component={Gallery} />
         <Route path="/lesson-one">
           <Lesson lesson={lesson_one} />
