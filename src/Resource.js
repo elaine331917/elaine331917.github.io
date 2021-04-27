@@ -1,13 +1,13 @@
 import ReactMarkdown from "react-markdown";
 
-const Competition = ({ competition }) => {
+const Resource = ({ resource }) => {
   return (
     <div className="home">
       <div id="content">
-        <ReactMarkdown source={competition} />
+        <ReactMarkdown source={resource} />
       </div>
     </div>
   );
 };
 
-export default Competition;
+export default Resource;
