@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <div className="masthead">
       <Link to="/">
-        <h1 className="site-title">So You Want to Learn About Figure Skating</h1>
+        <h1 className="site-title">About</h1>
       </Link>
 
       <div className="nav-links">
