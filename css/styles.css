@@ -1,6 +1,15 @@
 body {
     font-family: 'Oxygen', sans-serif;
-    margin: 0.5rem 2rem;
+    margin: 0 3rem;
+}
+
+h1 {
+    font-family: 'Roboto Mono', monospace;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
 }
 
 nav {
@@ -8,7 +17,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #E9E9E9;
-
+    padding: 0.5rem 0
 }
 
 #logo {
@@ -21,7 +30,7 @@ a {
     text-decoration: none;
 }
 
-#logo a {
+#logo #name {
     font-family: 'Righteous', cursive;
     font-size: 30px;
 }
@@ -43,15 +52,20 @@ a {
 li a {
     display: block;
     text-align: center;
-    color:black;
+    color:rgb(78, 78, 78);
     text-decoration: none;
-    padding: 16px 16px;
+    padding: 16px 18px;
     background-color: white;
     transition: color 350ms;
 }
 
-li a:hover {
+li a:hover, .active {
     color: rgb(255, 149, 149);
+}
+
+header {
+    margin: 0 5rem;
+    margin-bottom: 3rem;;
 }
 
 footer {
@@ -59,11 +73,14 @@ footer {
     flex-direction: column;
     align-items: center;
     margin: 2rem 0;
+    padding:1rem;
+    height:8rem;
+    justify-content: space-around;
 }
 
 .socials {
     display:flex;
-    width: 100px;
+    width: 200px;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
