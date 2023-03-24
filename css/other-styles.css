@@ -8,3 +8,11 @@ header {
 iframe {
     width: 100%;
 }
+
+main {
+    margin: 0 20vw;
+}
+
+#resume {
+    margin: 0 10vw;
+}
