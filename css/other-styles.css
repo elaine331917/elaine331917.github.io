@@ -13,6 +13,12 @@ main {
     margin: 0 20vw;
 }
 
+@media screen and (max-width: 756px) {
+    main {
+        margin: 0 10vw;
+    }
+}
+
 #resume {
     margin: 0 10vw;
 }
