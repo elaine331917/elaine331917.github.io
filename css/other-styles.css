@@ -1,3 +1,7 @@
+body {
+    font-family: 'Catamaran', sans-serif;
+}
+
 header {
     display:flex;
     align-items: center;
@@ -11,6 +15,28 @@ iframe {
 
 main {
     margin: 0 20vw;
+}
+
+.resume {
+    display:flex;
+    flex-direction: column;
+}
+
+.section {
+    display:grid;
+    grid-template-columns: 1fr, 2fr;
+}
+
+.section .heading {
+    grid-column-start: 1 / 2;
+    background: -webkit-linear-gradient(#ff0f7b, #f89b29);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+}
+
+.section .text {
+    grid-column-start: 2;
 }
 
 @media screen and (max-width: 756px) {
