@@ -1,3 +1,5 @@
+/* Text */
+
 * {
     color: #331917;
 }
@@ -34,13 +36,22 @@ a, a:focus, a:visited, a:link, a:hover, a:active {
     color: #331917 !important;
 }
 
+/* Navigation */
+
 nav {
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
+    display:flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
     border-bottom: 1px solid #E9E9E9;
     padding: 0.5rem 0;
     margin: 0 5vw;
+}
+
+#navbar {
+    display:flex !important;
+    flex-direction: row;
+    justify-content: space-between !important;
+    align-items: center !important;
 }
 
 /* The switch - the box around the slider */
@@ -111,11 +122,6 @@ input:checked + .slider:before {
     display:flex;
 }
 
-a {
-    color:black;
-    text-decoration: none;
-}
-
 #logo #name {
     font-family: 'Righteous', cursive;
     font-size: 30px;
@@ -146,7 +152,7 @@ li a {
 }
 
 li a:hover, .active {
-    color: rgb(255, 149, 149);
+    color: rgb(255, 149, 149) !important;
 }
 
 header {
