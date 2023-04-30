@@ -18,20 +18,16 @@ h2, h3 {
     font-family: 'Rubik', monospace;
 }
 
-main h2 {
+main h1 {
     margin-bottom:10vh;
 }
 
-#greeting {
-    color: rgb(255, 148, 148);
-    font-size: 30px;
-    font-family: 'Oxygen', sans-serif;
+section h1 {
+    margin-bottom: 1rem;
 }
 
-#intro-name {
-    color: rgb(255, 119, 106);
-    font-size:35px;
-    font-family: 'Roboto Mono', monospace;
+.bold {
+    font-weight: bold;
 }
 
 p {
@@ -68,11 +64,24 @@ nav {
     flex-direction: row;
     justify-content: space-between !important;
     align-items: center !important;
+    padding: 1rem 0;
+}
+
+navbar-brand {
+    display:flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
 }
 
 #logo {
     padding: 0 16px;
     display:flex;
+    align-items: center;
+}
+
+#logo svg:hover {
+    transform: scale(1.1);
 }
 
 #logo #name {
@@ -91,7 +100,6 @@ nav {
     overflow: hidden;
     top:0;
     background-color: white;
-    
 }
 
 li a {
@@ -188,7 +196,6 @@ header {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    transition: all 300ms;
 }
 
 .thumbnail:hover {
@@ -201,6 +208,7 @@ header {
     justify-content: space-between;
     align-items: flex-start;
     width:40%;
+    margin-top:1rem;
 }
 
 .project-info a:hover {
@@ -262,6 +270,10 @@ footer {
     justify-content: space-between;
 }
 
+.socials a svg:hover {
+    transform: scale(1.1);
+}
+
 footer p {
     font-size: 12px;
 }
@@ -290,5 +302,8 @@ footer p {
     }
     .project-info {
         width: 100%
+    }
+    .preview {
+        min-width: 85vw;
     }
 }
