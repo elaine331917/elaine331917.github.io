@@ -29,6 +29,74 @@ section {
     padding: 3rem 10vw;
 }
 
+.img-container {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 10rem;
+    width: 10rem;
+    object-fit: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img1 {
+    background-image: url('../images/art/sunset-bridge.jpeg');
+}
+
+.img2 {
+    background-image: url('../images/art/dreamy-mountains.jpeg');
+}
+
+.img3 {
+    background-image: url('../images/art/lovebirds.jpeg');
+}
+
+.img4 {
+    background-image: url('../images/art/burning-city.jpeg');
+}
+
+.img5 {
+    background-image: url('../images/art/days-end.jpeg');
+}
+
+.img6 {
+    background-image: url('../images/art/rainy-park.jpeg');
+}
+
+.art-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns on large screens */
+    grid-gap: 5px; /* margin between images */
+}
+
+.art-piece {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30vh;
+    width: 30vh;
+}
+
+@media (max-width: 968px) { /* adjust for smaller screens */
+    .art-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on medium screens */
+    }
+}
+
+@media (max-width: 768px) { /* adjust for smaller screens */
+    .art-grid {
+        grid-template-columns: repeat(2, 1fr); /* 3 columns on medium screens */
+    }
+}
+
+@media (max-width: 576px) { /* adjust for even smaller screens */
+    .art-grid {
+        grid-template-columns: 1fr; /* 2 columns on small screens */
+    }
+}
+
 @media screen and (max-width: 756px) {
     section {
         padding: 2rem 2rem;
