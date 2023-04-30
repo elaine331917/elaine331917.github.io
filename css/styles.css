@@ -222,7 +222,8 @@ header {
 }
 
 .tag {
-    background-color: #FFC5C5;
+    background-color: white;
+    border: 1px solid #FF7777;
     padding: 2px 8px;
     color: #331917;
     margin: 4px;
