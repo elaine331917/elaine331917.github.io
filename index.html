@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Oxygen:wght@300;400;700&family=Righteous&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&family=Righteous&family=Roboto+Mono:wght@300;400;500&family=Rubik&display=swap" rel="stylesheet">
 <body>
     <nav class="navbar navbar-expand-sm navbar-light" id="navbar">
         <a class="navbar-brand" href="index.html" id="logo">
@@ -20,7 +20,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse custom-nav-bar justify-content-end" id="navbarContent">
-            <ul class="custom-nav navbar-nav m1-auto">
+            <ul class="custom-nav navbar-nav mr-auto">
                 <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
@@ -28,29 +28,51 @@
         </div>
     </nav>
     <header>
-        <div id="greeting">Hello!</div>
-        <div id="intro-name">I'm Elaine.</div>
-        <p>I'm currently a third-year student at UNC Chapel Hill majoring in Computer Science and Information Science.</p>
-            <p>I enjoy designing things and implementing my designs. 
-            As such, I am an aspiring software engineer with a focus on frontend development and a passion for UX Design. 
+        <div class="greeting">
+            <h1>Hello!</h1>
+            <h2>I'm Elaine.</h2>
+        </div>
+        <div class="my-intro">
+            <p>I'm a student at UNC Chapel Hill majoring in Computer Science and Information Science.</p>
+            <p>As an aspiring software engineer with a focus on frontend development and a passion for UX Design, 
+            I love designing things and implementing my designs. 
             Welcome to my portfolio!</p>
+        </div>
     </header>
-    <main class="previews">
-        <div class="preview">
-            <div class="thumbnail"></div>
-            <div class="project-info">
-                <div class="project-title"><h3>Around the Block</h3></div>
-                <div class="project-desc"><p>Lorem ipsum</p></div>
+    <main>
+        <h2>Featured Projects</h2>
+        <div class="previews">
+            <div class="preview">
+                <div class="project-content">
+                    <div class="thumbnail atb-img"></div>
+                    <div class="project-info">
+                        <div class="project-title"><h3>Around the Block</h3></div>
+                        <div class="project-desc"><p>A website for helping artists get around creative block by providing new challenges and inspiration.</p></div>
+                        <div class="tags">
+                            <p class="tag">#Angular</p>
+                            <p class="tag">#Python</p>
+                            <p class="tag">#Typescript</p>
+                            <p class="tag">#HTML</p>
+                            <p class="tag">#CSS</p>
+                            <p class="tag">#Figma</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="tags">
-                <p class="tag">#Angular</p>
-                <p class="tag">#Python</p>
-                <p class="tag">#Typescript</p>
-                <p class="tag">#HTML</p>
-                <p class="tag">#CSS</p>
-                <p class="tag">#Figma</p>
+            <div class="preview">
+                <div class="project-content">
+                    <div class="thumbnail ktp-img"></div>
+                    <div class="project-info">
+                        <div class="project-title"><h3>Kappa Theta Pi Rush App</h3></div>
+                        <div class="project-desc"><p>An iOS app designed for UNC's technology fraternity's rush process.</p></div>
+                        <div class="tags">
+                            <p class="tag">#Figma</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        
     </main>
     <footer>
         <div class="socials">
