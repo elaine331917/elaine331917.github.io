@@ -29,6 +29,11 @@ p {
     line-height: 1.6;
 }
 
+a, a:focus, a:visited, a:link, a:hover, a:active {
+    text-decoration: none;
+    color: #331917 !important;
+}
+
 nav {
     display:flex;
     justify-content: space-between;
