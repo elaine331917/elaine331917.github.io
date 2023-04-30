@@ -2,6 +2,7 @@
 
 * {
     color: #331917;
+    transition: all 300ms;
 }
 
 body {
@@ -17,8 +18,8 @@ h2, h3 {
     font-family: 'Rubik', monospace;
 }
 
-h2 {
-    margin-bottom:3rem;
+main h2 {
+    margin-bottom:10vh;
 }
 
 #greeting {
@@ -99,6 +100,7 @@ li a {
     color:rgb(78, 78, 78);
     text-decoration: none;
     padding: 16px 18px;
+    margin: 0 0.5rem;
     background-color: white;
     transition: color 350ms;
 }
@@ -113,30 +115,30 @@ header {
     display:flex;
     flex-flow: row wrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     align-content: center;
-    padding: 0 20vw;
+    padding: 10rem;
     margin-top:1rem;
     margin-bottom: 3rem;;
     min-height: 85vh;
-    gap: 2rem;
 }
 
 .greeting {
     display:flex;
     flex-direction: column;
     flex:1 1 10rem;
+    margin-right: 2rem;
 }
 
 .greeting h1 {
     color: rgb(255, 148, 148);
-    font-size: 30px;
+    font-size: 40px;
     font-family: 'Rubik', sans-serif;
 }
 
 .greeting h2 {
     color: rgb(255, 119, 106);
-    font-size:35px;
+    font-size:45px;
     font-family: 'Roboto Mono', monospace;
 }
 
@@ -146,6 +148,9 @@ header {
     flex:2 2 20rem;
 }
 
+.my-intro p {
+    font-size: 24px;
+}
 
 /* Projects */
 
@@ -154,7 +159,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
+    gap: 20vh;
 }
 
 .preview {
@@ -183,6 +188,11 @@ header {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    transition: all 300ms;
+}
+
+.thumbnail:hover {
+    transform: scale(1.1);
 }
 
 .project-info {
@@ -193,6 +203,11 @@ header {
     width:40%;
 }
 
+.project-info a:hover {
+    color: #FF7777;
+    transform: scale(1.05);
+}
+
 .tags {
     display:flex;
     flex-flow: row wrap;
@@ -200,12 +215,11 @@ header {
 
 .tag {
     background-color: #FFC5C5;
-    padding: 4px 8px;
+    padding: 2px 8px;
     color: #331917;
     margin: 4px;
     border-radius: 5px;
-    font-size: 12px;
-    font-weight: bold;
+    font-size: 14px;
 }
 
 .atb-img {
@@ -214,6 +228,16 @@ header {
 
 .ktp-img {
     background-image: url('../images/ktp/ktp.png');
+}
+
+/* Sections */
+
+.white {
+    background-color: white;
+}
+
+.pink {
+    background-color: #ffe6e6;
 }
 
 /* Footer */
@@ -245,10 +269,24 @@ footer p {
 @media screen and (max-width: 756px) {
     header {
         padding: 0 10vw;
+        gap: 1rem;
+    }
+    .my-intro p {
+        font-size: 18px;
+    }
+    .greeting h1 {
+        color: rgb(255, 148, 148);
+        font-size: 30px;
+        font-family: 'Rubik', sans-serif;
+    }
+    .greeting h2 {
+        color: rgb(255, 119, 106);
+        font-size:35px;
+        font-family: 'Roboto Mono', monospace;
     }
     body {
         font-family: 'Oxygen', sans-serif;
-        margin: 0 1rem;
+        margin: 0;
     }
     .project-info {
         width: 100%
