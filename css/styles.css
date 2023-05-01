@@ -79,7 +79,7 @@ navbar-brand {
 }
 
 .navbar-toggler-icon {
-    background-image: url('../images/menu.svg') !important;
+    background-image: url('../icons/menu.svg') !important;
 }
 
 #logo {
