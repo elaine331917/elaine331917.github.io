@@ -147,7 +147,7 @@ header {
 }
 
 .greeting h1 {
-    color: rgb(255, 148, 148);
+    color: #ff9494;
     font-size: 40px;
     font-family: 'Rubik', sans-serif;
 }
@@ -285,6 +285,34 @@ footer {
 
 footer p {
     font-size: 12px;
+}
+
+/* Top button */
+
+html {
+    scroll-behavior: smooth;
+}
+  
+#top {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 25px;
+    right: 35px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #ff9494;
+    color: white;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#top:hover {
+    background-color: #FF7777;
 }
 
 @media screen and (max-width: 756px) {
