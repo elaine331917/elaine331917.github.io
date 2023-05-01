@@ -14,7 +14,7 @@ h1 {
     font-family: 'Roboto Mono', monospace;
 }
 
-h2, h3 {
+h2, h3, h4, h5, h6 {
     font-family: 'Rubik', monospace;
 }
 
@@ -251,6 +251,7 @@ header {
 
 section {
     padding: 3rem 10vw;
+    width: 100%;
 }
 
 .white {
@@ -263,6 +264,10 @@ section {
 
 .blue {
     background-color: #B5E5F7;
+}
+
+.grey {
+    color: rgb(118, 118, 118);
 }
 
 /* Footer */
@@ -333,6 +338,7 @@ html {
     justify-content: center;
     width: auto;
     border-radius: 10px;
+    margin: 2rem 1rem;
 }
 
 .btn-pink {
@@ -351,7 +357,6 @@ html {
 .row {
     display:flex;
     flex-flow: row wrap;
-    gap:1rem;
     align-items: center;
     justify-content: center;
 }

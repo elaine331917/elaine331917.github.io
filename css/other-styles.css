@@ -27,6 +27,28 @@ iframe {
     margin-bottom: 2rem;
 }
 
+.resume-section .row {
+    display:flex;
+    align-items: flex-start;
+}
+
+.resume-section p {
+    margin: 3px 0;
+    font-weight: 300;
+}
+
+.experience {
+    display:flex;
+    flex-flow: row wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 1rem;;
+}
+
+.position {
+    margin-right: 1rem;
+}
+
 /* About */
 
 .art {
