@@ -74,6 +74,14 @@ navbar-brand {
     justify-content: center !important;
 }
 
+.navbar-light .navbar-toggler {
+    border-color: transparent !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url('../images/menu.svg') !important;
+}
+
 #logo {
     padding: 0 16px;
     display:flex;
