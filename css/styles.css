@@ -249,12 +249,20 @@ header {
 
 /* Sections */
 
+section {
+    padding: 3rem 10vw;
+}
+
 .white {
     background-color: white;
 }
 
 .pink {
     background-color: #ffe6e6;
+}
+
+.blue {
+    background-color: #B5E5F7;
 }
 
 /* Footer */

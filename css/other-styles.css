@@ -29,10 +29,6 @@ iframe {
 
 /* About */
 
-section {
-    padding: 3rem 10vw;
-}
-
 .art {
     display:flex;
     flex-direction: column;
