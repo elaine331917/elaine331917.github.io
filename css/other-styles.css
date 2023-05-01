@@ -2,6 +2,10 @@ body {
     font-family: 'Catamaran', sans-serif;
 }
 
+main {
+    margin: 0;
+}
+
 header {
     display:flex;
     align-items: center;
@@ -9,12 +13,10 @@ header {
     margin:0;
 }
 
+/* Resume */
+
 iframe {
     width: 100%;
-}
-
-main {
-    margin: 0;
 }
 
 .resume {
@@ -24,6 +26,8 @@ main {
 .resume h1 {
     margin-bottom: 2rem;
 }
+
+/* About */
 
 section {
     padding: 3rem 10vw;
@@ -88,6 +92,34 @@ section {
     background-repeat: no-repeat;
     height: 30vw;
     width: 30vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.art-piece:hover .overlay {
+    opacity: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.73) 100%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.overlay h1 {
+    margin: 0;
+    color: white;
+    font-size: 22px;
 }
 
 @media (max-width: 968px) { /* adjust for smaller screens */
