@@ -29,16 +29,15 @@ section {
     padding: 3rem 10vw;
 }
 
-.img-container {
+.art {
     display:flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 10rem;
-    width: 10rem;
-    object-fit: cover;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    padding: 3rem 0;
+}
+
+.art h1 {
+    margin-bottom: 2rem;
 }
 
 .img1 {
@@ -62,12 +61,24 @@ section {
 }
 
 .img6 {
+    background-image: url('../images/art/in-the-clouds.jpeg');
+}
+
+.img7 {
+    background-image: url('../images/art/stitch.jpeg');
+}
+
+.img8 {
+    background-image: url('../images/art/hydrangeas.jpeg');
+}
+
+.img9 {
     background-image: url('../images/art/rainy-park.jpeg');
 }
 
 .art-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columns on large screens */
+    grid-template-columns: repeat(3, 1fr); /* 4 columns on large screens */
     grid-gap: 5px; /* margin between images */
 }
 
@@ -75,25 +86,27 @@ section {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 30vh;
-    width: 30vh;
+    height: 30vw;
+    width: 30vw;
 }
 
 @media (max-width: 968px) { /* adjust for smaller screens */
     .art-grid {
-        grid-template-columns: repeat(3, 1fr); /* 3 columns on medium screens */
-    }
-}
-
-@media (max-width: 768px) { /* adjust for smaller screens */
-    .art-grid {
         grid-template-columns: repeat(2, 1fr); /* 3 columns on medium screens */
+    }
+    .art-piece {
+        height: 47vw;
+        width: 47vw;
     }
 }
 
 @media (max-width: 576px) { /* adjust for even smaller screens */
     .art-grid {
         grid-template-columns: 1fr; /* 2 columns on small screens */
+    }
+    .art-piece {
+        height: 90vw;
+        width: 90vw;
     }
 }
 
