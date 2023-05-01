@@ -323,6 +323,39 @@ html {
     background-color: #FF7777;
 }
 
+/* Buttons */
+
+.button {
+    background-color: transparent;
+    padding:8px 16px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    border-radius: 10px;
+}
+
+.btn-pink {
+    border: 2px solid #FF7777;
+}
+
+.btn-pink:hover {
+    color: white !important;
+    background-color: #FF7777;
+}
+
+.btn-blue {
+    border: 2px solid #B5E5F7;
+}
+
+.row {
+    display:flex;
+    flex-flow: row wrap;
+    gap:1rem;
+    align-items: center;
+    justify-content: center;
+}
+
 @media screen and (max-width: 756px) {
     header {
         padding: 0 10vw;
