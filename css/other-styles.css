@@ -145,7 +145,7 @@ iframe {
     overflow: hidden;
 }
 
-.art-piece:hover .overlay {
+.art-piece:hover .overlay, .art-piece:focus .overlay {
     opacity: 1;
 }
 

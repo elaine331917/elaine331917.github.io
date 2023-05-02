@@ -8,7 +8,7 @@ body {
     font-family: 'Oxygen', sans-serif;
     margin: 0 3rem;
     background-color: white;
-    color: #331917
+    color: #331917;
 }
 
 .dark-mode {
@@ -73,6 +73,10 @@ nav {
     padding: 1rem 0;
 }
 
+#navbarContent a {
+    color:#331917;
+}
+
 navbar-brand {
     display:flex !important;
     flex-direction: row !important;
@@ -94,7 +98,7 @@ navbar-brand {
     align-items: center;
 }
 
-#logo svg:hover {
+#logo svg:hover, #logo svg:focus{
     transform: scale(1.1);
 }
 
@@ -125,8 +129,8 @@ li a {
     transition: color 350ms;
 }
 
-li a:hover, .active {
-    color: rgb(255, 149, 149) !important;
+li a:hover, li a:focus, .active {
+    color: #ff9494 !important;
 }
 
 /* Header */
@@ -157,7 +161,7 @@ header {
 }
 
 .greeting h2 {
-    color: rgb(255, 119, 106);
+    color: #ff776a;
     font-size:45px;
     font-family: 'Roboto Mono', monospace;
 }
@@ -210,7 +214,7 @@ header {
     background-position: center;
 }
 
-.thumbnail:hover {
+.thumbnail:hover, .thumbnail:focus {
     transform: scale(1.1);
 }
 
@@ -223,7 +227,7 @@ header {
     margin-top:1rem;
 }
 
-.project-info a:hover {
+.project-info a:hover, .project-info a:focus {
     color: #FF7777;
     transform: scale(1.05);
 }
@@ -265,7 +269,7 @@ section {
 }
 
 .blue {
-    background-color: #B5E5F7;
+    background-color: #d5f4ff;
 }
 
 .grey {
@@ -294,7 +298,7 @@ footer {
     justify-content: space-between;
 }
 
-.socials a svg:hover {
+svg:hover, svg:focus {
     transform: scale(1.1);
 }
 
@@ -326,7 +330,7 @@ html {
     border-radius: 50%;
 }
 
-#top:hover {
+#top:hover, #top:focus {
     background-color: #FF7777;
 }
 
@@ -347,13 +351,18 @@ html {
     border: 2px solid #FF7777;
 }
 
-.btn-pink:hover {
+.btn-pink:hover, .btn-pink:focus {
     color: white !important;
     background-color: #FF7777;
 }
 
 .btn-blue {
-    border: 2px solid #B5E5F7;
+    border: 2px solid #066b90;
+}
+
+.btn-blue:hover, .btn-blue:focus {
+    color: white !important;
+    background-color: #066b90;
 }
 
 .row {
