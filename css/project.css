@@ -22,8 +22,6 @@
     display:flex;
     align-items: center;
     justify-content: center;
-    height: 50vw;
-    width: 45vw;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -31,6 +29,14 @@
 
 .atb-style {
     background-image: url('../images/atb/atb-style.png');
+    height: 40vw;
+    width: 35vw;
+}
+
+.ktp-style {
+    background-image: url('../images/ktp/ktp-style.png');
+    height: 30vw;
+    width: 35vw;
 }
 
 .personas {
@@ -71,15 +77,23 @@
         height: 90vw;
         width: 70vw;
     }
-    .style {
+    .atb-style {
         height: 70vw;
+        width: 60vw;
+    }
+    .ktp-style {
+        height: 50vw;
         width: 60vw;
     }
 }
 
 @media (max-width: 600px) { /* adjust for smaller screens */
-    .style {
+    .atb-style {
         height: 90vw;
+        width: 80vw;
+    }
+    .ktp-style {
+        height: 70vw;
         width: 80vw;
     }
 }
