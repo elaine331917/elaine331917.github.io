@@ -9,3 +9,77 @@
     height: 50vw;
     border: 1px solid black;
 }
+
+/* Images */
+
+.img-container {
+    display:flex;
+    flex: 1 1 30vw;
+    max-width: 80vw;
+}
+
+.style {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vw;
+    width: 45vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.atb-style {
+    background-image: url('../images/atb/atb-style.png');
+}
+
+.personas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 4 columns on large screens */
+    grid-gap: 5px; /* margin between images */
+}
+
+.persona {
+    content: '';
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 45vw;
+    width: 35vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.p1 {
+    background-image: url('../images/atb/olivia.png');
+}
+
+.p2 {
+    background-image: url('../images/atb/ian.png');
+}
+
+.p3 {
+    background-image: url('../images/atb/lucy.png');
+}
+
+@media (max-width: 968px) { /* adjust for smaller screens */
+    .personas {
+        grid-template-columns: 1fr; /* 3 columns on medium screens */
+    }
+    .persona {
+        height: 90vw;
+        width: 70vw;
+    }
+    .style {
+        height: 70vw;
+        width: 60vw;
+    }
+}
+
+@media (max-width: 600px) { /* adjust for smaller screens */
+    .style {
+        height: 90vw;
+        width: 80vw;
+    }
+}
