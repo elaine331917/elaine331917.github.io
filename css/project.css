@@ -79,6 +79,11 @@
     margin: 1rem 0;
 }
 
+.atb-demo {
+    width:80vw;
+    height: auto;
+}
+
 @media (max-width: 968px) { /* adjust for smaller screens */
     .personas {
         grid-template-columns: 1fr; /* 3 columns on medium screens */

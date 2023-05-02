@@ -142,12 +142,13 @@ navbar-brand {
     font-family: 'Roboto Mono', monospace;
     display:flex;
     flex-direction: column;
-    justify-content: right;
+    justify-content: space-evenly;
     list-style-type: none;
     margin:0;
     padding: 0;
-    overflow: hidden;
-    top:0;;
+    top:0;
+    align-content: stretch;
+    align-items: center;
 }
 
 li a {
@@ -430,12 +431,10 @@ html {
         font-size: 18px;
     }
     .greeting h1 {
-        color: rgb(255, 148, 148);
         font-size: 30px;
         font-family: 'Rubik', sans-serif;
     }
     .greeting h2 {
-        color: rgb(255, 119, 106);
         font-size:35px;
         font-family: 'Roboto Mono', monospace;
     }
