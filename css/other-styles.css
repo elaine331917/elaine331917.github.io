@@ -68,6 +68,10 @@ iframe {
     font-weight: 300;
 }
 
+.resume-section h4 {
+    color: #940242;
+}
+
 .experience {
     display:flex;
     flex-flow: row wrap;

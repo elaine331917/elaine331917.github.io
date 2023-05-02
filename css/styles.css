@@ -12,7 +12,7 @@ body {
 }
 
 .dark-mode {
-    background-color: #331917 !important;
+    background-color: #121212 !important;
     color: white !important;
 }
 
@@ -60,8 +60,6 @@ svg {
 
 /* Underline */
 
-/* underline hover effect */
-
 a, a > span {
     position: relative;
     color: inherit;
@@ -80,7 +78,7 @@ a:before, a:after, a > span:before, a > span:after {
     bottom: 0;
     width: 100%;
     height: 2px;
-    background: #ff776a;
+    background: #940242;
     transform: scaleX(0);
 }
 .underline-hover:hover:before, .underline-hover:focus:before {
@@ -163,7 +161,7 @@ li a {
 }
 
 li a:hover, li a:focus, .active {
-    color: #ff9494 !important;
+    color: #C4457C !important;
 }
 
 /* Header */
@@ -188,13 +186,13 @@ header {
 }
 
 .greeting h1 {
-    color: #ff9494;
+    color: #C4457C;
     font-size: 40px;
     font-family: 'Rubik', sans-serif;
 }
 
 .greeting h2 {
-    color: #ff776a;
+    color: #940242;
     font-size:45px;
     font-family: 'Roboto Mono', monospace;
 }
@@ -274,7 +272,7 @@ header {
 }
 
 .tag {
-    border: 1px solid #FF7777;
+    border: 1px solid #940242;
     padding: 2px 8px;
     margin: 4px;
     border-radius: 5px;
@@ -301,11 +299,11 @@ section {
 }
 
 .pink {
-    background-color: #ffe6e6;
+    background-color: #faecf2;
 }
 
 .blue {
-    background-color: #d5f4ff;
+    background-color: #e2f7ff;
 }
 
 .grey {
@@ -339,7 +337,7 @@ svg:hover, svg:focus {
 }
 
 footer p {
-    font-size: 12px;
+    font-size: 16px;
 }
 
 /* Top button */
@@ -367,7 +365,8 @@ html {
 }
 
 #top:hover, #top:focus {
-    background-color: #FF7777;
+    background-color: #940242;
+    color: white;
 }
 
 /* Buttons */
@@ -384,12 +383,12 @@ html {
 }
 
 .btn-pink {
-    border: 2px solid #FF7777;
+    border: 2px solid #940242;
 }
 
 .btn-pink:hover, .btn-pink:focus {
     color: white !important;
-    background-color: #FF7777;
+    background-color: #940242;
 }
 
 .btn-blue {
