@@ -1,4 +1,6 @@
-// Scroll to top button script
+/* Scripts */
+
+// Scroll to top button
 
 let button = document.getElementById("top");
 
@@ -17,4 +19,11 @@ function scrollFunction() {
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
+}
+
+// Dark mode toggle
+
+function darkMode() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
 }
