@@ -407,6 +407,20 @@ html {
     justify-content: center;
 }
 
+/* List */
+
+.resume-section ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.resume-section li {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
 @media screen and (max-width: 756px) {
     header {
         padding: 0 10vw;
