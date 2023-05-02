@@ -54,6 +54,39 @@ main {
     justify-content: center;
 }
 
+svg {
+    cursor: pointer;
+}
+
+/* Underline */
+
+/* underline hover effect */
+
+a, a > span {
+    position: relative;
+    color: inherit;
+    text-decoration: none;
+    line-height: 24px;
+}
+
+a:before, a:after, a > span:before, a > span:after {
+    content: '';
+    position: absolute;
+    transition: transform .5s ease;
+}
+
+.underline-hover:before {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #ff776a;
+    transform: scaleX(0);
+}
+.underline-hover:hover:before, .underline-hover:focus:before {
+    transform: scaleX(1);
+}
+
 /* Navigation */
 
 nav {
@@ -172,8 +205,12 @@ header {
     flex:2 2 20rem;
 }
 
-.my-intro p {
+.tagline {
     font-size: 24px;
+}
+
+.in-touch {
+    font-size: 18px;
 }
 
 /* Projects */
@@ -228,7 +265,6 @@ header {
 }
 
 .project-info a:hover, .project-info a:focus {
-    color: #FF7777;
     transform: scale(1.05);
 }
 

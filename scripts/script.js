@@ -27,3 +27,14 @@ function darkMode() {
     var element = document.body;
     element.classList.toggle("dark-mode");
 }
+
+// Email obfuscation
+
+var email = 'elainedong520@gmail.com';
+var encodedEmail = '';
+
+for (var i = 0; i < email.length; i++) {
+    encodedEmail += '&#' + email.charCodeAt(i) + ';';
+}
+
+document.getElementById('email').innerHTML = encodedEmail;
