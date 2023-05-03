@@ -28,30 +28,13 @@ header {
 }
 
 .image-wrapper {
-    position: relative;
-    display: inline-block;
+    display: flex;
 }
-
-.image-wrapper::before {
-    content: '';
-    position: absolute;
-    left: -10px;
-    bottom: -10px;
-    width: calc(100% + 20px);
-    height: calc(100% + 20px);
-    border: 2px solid pink;
-    z-index: -1;
-}
-
 
 /* Resume */
 
 iframe {
     width: 100%;
-}
-
-.resume {
-    margin: 2rem
 }
 
 .resume h1 {

@@ -44,7 +44,7 @@ p {
 
 a, a:focus, a:visited, a:link, a:hover, a:active {
     text-decoration: none;
-    color: #331917;
+    color: inherit;
 }
 
 main {
