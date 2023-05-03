@@ -9,6 +9,8 @@ body {
     margin: 0 3rem;
     background-color: white;
     color: #331917;
+    display:flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -277,7 +279,7 @@ header {
 }
 
 .atb-img {
-    background-image: url('../images/atb/atb.png');
+    background-image: url('../images/atb/atb-thumbnail.png');
 }
 
 .ktp-img {
