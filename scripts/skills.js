@@ -2,7 +2,7 @@
 
 const programming = ["Python", "HTML", "CSS", "SQL", "TypeScript", "JavaScript", "Java"];
 const frameworks = ["Angular", "Bootstrap", "FastAPI", "SQLAlchemy", "RxJS"]
-const tools = ["Figma", "Git & GitHub", "DevTools", "PostgreSQL"]
+const tools = ["Figma", "Git & GitHub", "DevTools", "Docker", "PostgreSQL"]
 const design = ["wireframing", "prototyping", "usability testing", "user research", "graphic design"]
 
 const programmingList = document.getElementById("programming");
