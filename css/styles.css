@@ -140,12 +140,12 @@ navbar-brand {
     font-family: 'Roboto Mono', monospace;
     display:flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     list-style-type: none;
     margin:0;
     padding: 0;
     top:0;
-    align-content: stretch;
+    align-content: center;
     align-items: center;
 }
 

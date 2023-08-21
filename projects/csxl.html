@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Around the Block | Elaine Dong Portfolio</title>
+    <title>CSXL Workshops | Elaine Dong Portfolio</title>
     <link rel="icon" href="../icons/favicon.svg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
@@ -36,18 +36,6 @@
         <div class="collapse navbar-collapse custom-nav-bar justify-content-end" id="navbarContent">
             <ul class="custom-nav navbar-nav mr-auto">
                 <li class="nav-item active"><a class="nav-link" href="../index.html">Home</a></li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Projects
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="../projects/atb.html">Around the Block</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="../projects/csxl.html">CSXL Workshops</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="../projects/polaris.html">Polaris Navigation</a>
-                    </div>
-                </li>
                 <li class="nav-item"><a class="nav-link" href="../about.html">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="../resume.html">Resume</a></li>
             </ul>
@@ -55,14 +43,16 @@
     </nav>
     <main>
         <section class="background white">
-            <h1>Around the Block</h1>
-            <h4>COMP 590: User Interfaces</h4>
-            <h5>Roles: Design Lead, Developer, Researcher</h5>
-            <p>With a team of three, I designed and developed a website for artists struggling with creative block, 
-                looking to challenge themselves and connect with a community of creatives. Users can generate random art challenges, 
-                called meChallenges, that will challenge them to create something new and unique every time. 
-                Users can also participate in community challenges, called weChallenges, and see what other artists are creating. 
-                Users can post submissions for the challenges and get feedback and support from other members of the community.</p>
+            <h1>CSXL Workshops</h1>
+            <h4>COMP 590: Foundations of Software Engineering</h4>
+            <h5>Roles: Tech Lead, Developer</h5>
+            <p>As the technical lead of this project, I led a team of 4 to develop a new workshops feature for the UNC Computer Science Experience Lab’s website. 
+                My responsibilities included developing functions for populating workshops data and registering for workshops in the frontend, as well as writing unit tests for backend functions. 
+                I also conducted code reviews for teammates and managed the team's workflow on GitHub.
+            </p>
+            <div class="row">
+                <a class="button btn-pink" href="https://team-a6-comp423-23s.apps.cloudapps.unc.edu/" target="_blank">Live Demo</a>
+            </div>
             <div class="tags">
                 <p class="tag">Angular</p>
                 <p class="tag">TypeScript</p>
@@ -72,49 +62,8 @@
                 <p class="tag">PostgreSQL</p>
                 <p class="tag">FastAPI</p>
                 <p class="tag">SQLAlchemy</p>
-                <p class="tag">Figma</p>
+                <p class="tag">Pytest</p>
             </div>
-        </section>
-        <section class="pink">
-            <h2>01. Research</h2>
-            <h3>The Problem</h3>
-            <p>A lot of artists struggle with creative block. One way artists overcome this is by using idea generators. 
-                There are definitely existing art prompt generators, but they don't really facilitate a sense of community or the sharing of art.
-                While there have been art prompts and art challenges such as Inktober in the past, 
-                it is often difficult to view the work of other artists from these challenges in an organized manner.
-            </p>
-            <p>We wanted to create a space where artists can find inspiration from prompts as well as 
-                other artists' work. At the same time, we wanted to avoid the pitfall of social media in which artists become 
-                too focused on engagement rather than art itself.
-            </p>
-            <h3>User Interviews and Personas</h3>
-            <p>Before starting the design process, our team administered 12 user interviews with artists, 
-                of which I conducted 6. From the information we gathered, we created 3 user personas to represent 
-                the different types of users that our website targets. We also created empathy maps to identiy user 
-                pain points and journey maps to visualize use cases.</p>
-        </section>
-        <section class="white">
-            <h2>02. Design</h2>
-            <h3>Styling</h3>
-            <div class="img-container">
-                <div class="style atb-style" aria-label="atb style" title="atb style guide"></div>
-            </div>
-            <h3>High Fidelity Wireframes and Interactive Prototype</h3>
-            <div class="video-container">
-                <iframe src="https://drive.google.com/file/d/1nfBkjP72UpR9Mfwtyuo3hX6nb2ii_Z-X/preview" width="840" height="500" allow="autoplay"></iframe>
-            </div>
-        </section>
-        <section class="pink">
-            <h2>03. Implementation</h2>
-            <div class="row">
-                <a class="button btn-pink" href="https://aroundtheblock.apps.cloudapps.unc.edu/" target="_blank">View Live Site</a>
-                <a class="button btn-pink" href="https://github.com/chphoom/aroundtheblock" target="_blank">Repository</a>
-            </div>
-            <p>We used Angular, TypeScript, HTML, and CSS to build the frontend; 
-                PostgreSQL and SQLAlchemy for managing the database; and Python to build the backend. 
-                I mainly worked in the frontend to style and structure the pages, retrieve data from the backend, and write scripts. 
-                I also helped with implementing authentication and made some API endpoints and functions in the backend.
-            </p>
         </section>
     </main>
     <footer>
