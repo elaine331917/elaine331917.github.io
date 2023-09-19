@@ -290,6 +290,10 @@ header {
     background-image: url('../images/ktp/ktp.png');
 }
 
+.polaris-img {
+    background-image: url('../images/polaris/polaris_thumbnail.png')
+}
+
 /* Sections */
 
 section {
