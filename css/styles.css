@@ -64,9 +64,10 @@ a, a > span {
     line-height: 24px;
 }
 
+/* TODO: Position causes problem with dropdown display*/
 a:before, a:after, a > span:before, a > span:after {
     content: '';
-    position: absolute;
+    position: relative;
     transition: transform .5s ease;
 }
 
@@ -83,6 +84,7 @@ a:before, a:after, a > span:before, a > span:after {
 }
 
 /* Navigation */
+/* TODO: nav bar width on mobile screens*/
 
 nav {
     display:flex !important;
@@ -130,7 +132,10 @@ navbar-brand {
     transform: scale(1.1);
 }
 
-#logo #name {
+#name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: 'Righteous', cursive;
     font-size: 30px;
     color: inherit;
@@ -154,8 +159,7 @@ li a {
     text-align: center;
     color:inherit;
     text-decoration: none;
-    padding: 16px 18px;
-    margin: 0 0.5rem;
+    padding: 8px 1rem !important;
     transition: color 350ms;
 }
 
