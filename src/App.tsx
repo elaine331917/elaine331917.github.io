@@ -9,16 +9,16 @@ import { ThemeProvider } from "./components/theme-provider";
 
 export default function App() {
     return (
-      <>
+      <div className="app">
         <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
             <Navbar />
             <Routes>
-            <Route path="/" element={<Home/>}/>
-            <Route path="/gallery" element={<Gallery/>}/>
-            <Route path="/resume" element={<Resume/>}/>
+                <Route path="/" element={<Home/>}/>
+                <Route path="/gallery" element={<Gallery/>}/>
+                <Route path="/resume" element={<Resume/>}/>
             </Routes>
             <Footer />
         </ThemeProvider>
-      </>
+      </div>
     );
 }

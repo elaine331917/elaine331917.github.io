@@ -74,3 +74,11 @@
     @apply bg-background text-foreground;
   }
 }
+
+.logo-container {
+  width: 100px;
+}
+
+section {
+  min-height: 95vh;
+}
