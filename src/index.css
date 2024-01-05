@@ -116,6 +116,13 @@ section {
   background-color: rgb(177, 177, 177);
 }
 
+/* Card customization */
+
+.card-heading {
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+}
+
 @media (min-width: 768px) {
   .page-container {
     padding-right: 5rem;
