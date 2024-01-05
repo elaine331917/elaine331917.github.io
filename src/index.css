@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400&family=Roboto+Mono:wght@300;400;500&family=Roboto:wght@300;400&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -69,6 +70,7 @@
 @layer base {
   * {
     @apply border-border;
+    font-family: 'Oxygen', sans-serif;
   }
   body {
     @apply bg-background text-foreground;
@@ -79,6 +81,48 @@
   width: 100px;
 }
 
+.page-container {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
 section {
   min-height: 95vh;
+  max-width: 1024px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* Subheading */
+
+.subtitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.subheading {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+
+.horizontal-bar {
+  height: 1px;
+  width: 40vw;
+  background-color: rgb(177, 177, 177);
+}
+
+@media (min-width: 768px) {
+  .page-container {
+    padding-right: 5rem;
+    padding-left: 5rem;
+  }
+}
+
+@media (min-width: 640px) {
+  
 }

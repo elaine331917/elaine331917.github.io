@@ -1,10 +1,11 @@
 export default function Gallery() {
 
     return (
-      <>
-        <section>
-          Gallery
-        </section>
-      </>
+        <div className="page-container">
+            <section className="flex flex-col md:flex-row">
+                <div>My Art</div>
+                <div></div>
+            </section>
+        </div>
     )
 }
