@@ -22,7 +22,7 @@ function Tags({tags}: TagProps) {
     return (
         <div className="flex flex-wrap gap-x-3 gap-y-1">
             {tags.map((tag) => (
-                <div className="font-mono text-sm text-slate-600 dark:text-slate-300">{tag}</div>
+                <div className="font-mono text-sm card">{tag}</div>
             ))}
         </div>
     )
@@ -31,7 +31,7 @@ function Tags({tags}: TagProps) {
 export default function ProjectCard({ project }: ProjectCardProps) {
     return (
         <>
-             <Card className="flex flex-col justify-between bg-slate-100 dark:bg-slate-800 border-none rounded-sm shadow-none p-2">
+             <Card className="flex flex-col justify-between heading border-none rounded-sm shadow-none p-2">
                 <div>
                     <CardHeader className="pb-4">
                         <CardTitle className="card-heading">{project.title}</CardTitle>

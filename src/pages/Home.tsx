@@ -1,6 +1,7 @@
 import ProjectCard from "@/components/project-card"
 import { Project } from "@/data/projects";
 import { projects } from "@/data/projects";
+import { Link } from "react-router-dom";
 
 interface GridProps {
   projects: Project[]
@@ -23,22 +24,28 @@ export default function Home() {
 
     return (
       <div className="page-container">
-        <section className="flex flex-row items-center gap-20">
-          <div className="w-60 h-60 bg-slate-500 hidden md:flex">
-            image or animation here
-          </div>
-          <div className="flex flex-col gap-7">
-            <div className="flex flex-col gap-2">
-              <div className="font-mono text-xl">Hello,</div>
-              <div className="text-6xl">I'm Elaine.</div>
+        <section>
+          <div className="flex flex-row gap-16 pt-20">
+            <div className="w-60 h-60 bg-slate-500 hidden md:flex">
+              image or animation here
             </div>
-            <div className="text-lg max-w-[500px]">I’m an aspiring software engineer with a passion for building intuitive and exceptional user experiences.</div>
-            <div className="text-lg">Welcome to my portfolio!</div>
+            <div className="flex flex-col gap-7">
+              <div className="flex flex-col gap-2">
+                <div className="font-mono text-xl accent">Hello,</div>
+                <div className="text-6xl heading">I'm Elaine.</div>
+              </div>
+              <div className="text-lg max-w-[600px]">I’m an aspiring software engineer with a passion for building exceptional user experiences. This year, I'll be joining <Link to="https://www.costargroup.com/" target="_blank" rel="noopener noreferrer" className="accent">CoStar Group</Link> as an Associate Software Engineer.</div>
+              <div className="text-lg">Get in touch</div>
+              <Link to="/" className="max-w-max">
+                <div className="custom-button">Get in touch</div>
+              </Link>
+            </div>
           </div>
+          
         </section>
         <section className="flex flex-col">
           <div className="subtitle">
-            <div className="subheading">About Me</div>
+            <div className="subheading heading">About Me</div>
             <div className="horizontal-bar"></div>
           </div>
           <div className="my-8 mx-auto">
@@ -57,13 +64,13 @@ export default function Home() {
         </section>
         <section>
           <div className="subtitle">
-            <div className="subheading">Things I've Built</div>
+            <div className="subheading heading">Things I've Built</div>
             <div className="horizontal-bar"></div>
           </div>
         </section>
         <section>
           <div className="subtitle">
-            <div className="subheading">Other Notable Projects</div>
+            <div className="subheading heading">Other Notable Projects</div>
             <div className="horizontal-bar"></div>
           </div>
           <div>

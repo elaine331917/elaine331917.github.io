@@ -5,10 +5,10 @@
  
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 3.9%;
+    --background: 252, 33%, 99%;
+    --foreground: 256, 14%, 15%;
 
-    --card: 0 0% 100%;
+    --card: 245, 38%, 94%;
     --card-foreground: 0 0% 3.9%;
  
     --popover: 0 0% 100%;
@@ -21,10 +21,10 @@
     --secondary-foreground: 0 0% 9%;
  
     --muted: 0 0% 96.1%;
-    --muted-foreground: 0 0% 45.1%;
+    --muted-foreground: 256, 20%, 40%;
  
-    --accent: 0 0% 96.1%;
-    --accent-foreground: 0 0% 9%;
+    --accent: 345, 63%, 51%;
+    --accent-foreground: 345, 63%, 51%;
  
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
@@ -37,10 +37,10 @@
   }
  
   .dark {
-    --background: 0 0% 3.9%;
-    --foreground: 0 0% 98%;
+    --background: 256, 14%, 15%;
+    --foreground: 245, 42%, 79%;
  
-    --card: 0 0% 3.9%;
+    --card: 246, 18%, 22%;
     --card-foreground: 0 0% 98%;
  
     --popover: 0 0% 3.9%;
@@ -53,10 +53,10 @@
     --secondary-foreground: 0 0% 98%;
  
     --muted: 0 0% 14.9%;
-    --muted-foreground: 0 0% 63.9%;
+    --muted-foreground: 245, 69%, 90%;
  
-    --accent: 0 0% 14.9%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 346, 100%, 84%;
+    --accent-foreground: 346, 100%, 84%;
  
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
@@ -74,6 +74,18 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+  .heading {
+    @apply text-muted-foreground;
+  }
+  .accent {
+    @apply text-accent;
+  }
+  .card {
+    @apply bg-card text-foreground;
+  }
+  .custom-button {
+    @apply border-accent text-accent;
   }
 }
 
@@ -121,6 +133,20 @@ section {
 .card-heading {
   font-size: 18px;
   font-family: 'Roboto', sans-serif;
+}
+
+/* Button customization */
+
+.custom-button {
+  border-width: 1.5px;
+  border-radius: 5px;
+  transition: all 150ms;
+  padding: 1rem 1.5rem;
+  max-width: max-content;
+}
+
+.custom-button:hover {
+  transform: translateX(0.25rem) translateY(0.25rem);
 }
 
 @media (min-width: 768px) {

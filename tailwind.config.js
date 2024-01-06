@@ -50,6 +50,17 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        'grapefruit': {
+          100: '#FFDBE8',
+          200: '#FFB7D1',
+          300: '#FFA4C5',
+          400: '#FF92BA',
+          500: '#DB598C',
+          600: '#CB3974',
+          700: '#AC3062',
+          800: '#802750',
+          900: '#651C39',
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
