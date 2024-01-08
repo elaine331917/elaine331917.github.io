@@ -23,7 +23,7 @@ export const projects: Project[] = [
         thumbnail: "path",
         description: "A prompt library and prompt management system to help employees utilize large language models, allowing users to vote on, sort through, and filter prompts.",
         date: "April 2023",
-        technologies: ["React", "TypeScript", "HTML/CSS", "Express.js", "DynamoDB", "AWS EC2"],
+        technologies: ["React", "TypeScript", "Tailwind CSS", "Express.js", "DynamoDB", "AWS"],
         repository: "https://github.com/chphoom/aroundtheblock",
         link: "https://aroundtheblock.apps.cloudapps.unc.edu/"
     },

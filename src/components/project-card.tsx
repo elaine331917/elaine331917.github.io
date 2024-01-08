@@ -14,15 +14,15 @@ interface ProjectCardProps {
     project: Project;
 }
 
-interface TagProps {
+export interface TagProps {
     tags: string[];
 }
 
-function Tags({tags}: TagProps) {
+export function Tags({tags}: TagProps) {
     return (
         <div className="flex flex-wrap gap-x-3 gap-y-1">
-            {tags.map((tag) => (
-                <div className="font-mono text-sm card">{tag}</div>
+            {tags.map((tag, index) => (
+                <div key={`tag-${index}`} className="font-mono text-sm card">{tag}</div>
             ))}
         </div>
     )
