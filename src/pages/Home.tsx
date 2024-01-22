@@ -4,7 +4,6 @@ import { ProjectDisplayRight } from "@/components/project-display-right";
 import { Project } from "@/data/projects";
 import { projects } from "@/data/projects";
 import { Link } from "react-router-dom";
-import picture from '../assets/elaine.jpg';
 
 interface GridProps {
   projects: Project[]
@@ -37,7 +36,7 @@ export default function Home() {
                 <div className="font-mono text-xl accent">Hello,</div>
                 <div className="text-6xl heading">I'm Elaine.</div>
               </div>
-              <div className="text-lg max-w-[600px]">I’m an aspiring software engineer with a passion for building exceptional user experiences. This year, I'll be joining <Link to="https://www.costargroup.com/" target="_blank" rel="noopener noreferrer" className="accent">CoStar Group</Link> as an Associate Software Engineer.</div>
+              <div className="text-lg max-w-[600px]">I’m an aspiring software engineer with a passion for building exceptional user experiences.</div>
               <Link to="/" className="max-w-max">
                 <div className="custom-button text-lg">Get in touch</div>
               </Link>
@@ -60,7 +59,7 @@ export default function Home() {
                   <br />
                   In my free time, you can find me painting, ice skating, or trying out a new restaurant :)</div>
               <div className="max-w-[500px] mx-10">
-                <img src={picture} className="bg-cover"/>
+                <img src='elaine.jpg' className="bg-cover"/>
               </div>
             </div>
           </div>
