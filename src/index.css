@@ -75,6 +75,9 @@
   body {
     @apply bg-background text-foreground;
   }
+  h2 {
+    font-family: 'Roboto Mono', sans-serif;
+  }
   .heading {
     @apply text-muted-foreground;
   }
@@ -118,7 +121,7 @@ section {
 }
 
 .subheading {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Mono', sans-serif;
   font-size: 24px;
 }
 
