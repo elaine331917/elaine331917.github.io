@@ -1,9 +1,10 @@
 import ProjectCard from "@/components/project-card"
-import { ProjectDisplayLeft } from "@/components/project-display-left";
-import { ProjectDisplayRight } from "@/components/project-display-right";
 import { Project } from "@/data/projects";
 import { projects } from "@/data/projects";
+import { useRef } from "react";
 import { Link } from "react-router-dom";
+import { useIsVisible } from "@/helpers/useIsVisible";
+import { ProjectDisplay } from "@/components/project-display";
 
 interface GridProps {
   projects: Project[]
@@ -24,9 +25,22 @@ function Grid({ projects }: GridProps) {
 
 export default function Home() {
 
+  // Section refs
+  const section1 = useRef<HTMLDivElement>(null);
+  const isVisible1 = useIsVisible(section1)
+
+  const section2 = useRef<HTMLDivElement>(null);
+  const isVisible2 = useIsVisible(section2)
+
+  const section3 = useRef<HTMLDivElement>(null);
+  const isVisible3 = useIsVisible(section3)
+
+  const section4 = useRef<HTMLDivElement>(null);
+  const isVisible4 = useIsVisible(section4)
+
     return (
       <div className="page-container">
-        <section>
+        <section ref={section1} className={`transition-opacity ease-in duration-500 ${isVisible1 ? "opacity-100" : "opacity-0"}`}>
           <div className="flex flex-row gap-16 pt-20">
             <div className="w-60 h-60 bg-slate-500 hidden md:flex">
               image or animation here
@@ -44,7 +58,7 @@ export default function Home() {
           </div>
           
         </section>
-        <section className="flex flex-col">
+        <section ref={section2} className={`transition-opacity flex flex-col ease-in duration-500 ${isVisible2 ? "opacity-100" : "opacity-0"}`}>
           <div className="subtitle">
             <div className="subheading heading">About Me</div>
             <div className="horizontal-bar"></div>
@@ -65,17 +79,17 @@ export default function Home() {
           </div>
           
         </section>
-        <section id="projects">
+        <section id="projects" ref={section3} className={`transition-opacity ease-in duration-500 ${isVisible3 ? "opacity-100" : "opacity-0"}`}>
           <div className="subtitle">
             <div className="subheading heading">Things I've Built</div>
             <div className="horizontal-bar"></div>
           </div>
-          <ProjectDisplayLeft project={projects[0]}></ProjectDisplayLeft>
-          <ProjectDisplayRight project={projects[1]}></ProjectDisplayRight>
-          <ProjectDisplayLeft project={projects[2]}></ProjectDisplayLeft>
+          <ProjectDisplay project={projects[0]} left={true} />
+          <ProjectDisplay project={projects[1]} left={false} />
+          <ProjectDisplay project={projects[2]} left={true} />
         </section>
 
-        <section>
+        <section ref={section4} className={`transition-opacity ease-in duration-500 ${isVisible4 ? "opacity-100" : "opacity-0"}`}>
           <div className="subtitle">
             <div className="subheading heading">Other Notable Projects</div>
             <div className="horizontal-bar"></div>

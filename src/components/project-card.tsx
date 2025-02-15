@@ -31,7 +31,7 @@ export function Tags({tags}: TagProps) {
 export default function ProjectCard({ project }: ProjectCardProps) {
     return (
         <>
-             <Card className="flex flex-col justify-between heading border-none rounded-sm shadow-none p-2">
+            <Card className="flex flex-col justify-between heading border-none rounded-sm shadow-none p-2 hover:">
                 <div>
                     <CardHeader className="pb-4">
                         <CardTitle className="card-heading">{project.title}</CardTitle>
@@ -42,8 +42,8 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                     </CardContent>
                 </div>
                 <CardFooter className="flex flex-row w-full justify-end gap-2">
-                    {project.repository && <Link to={project.repository} target="_blank" rel="noopener noreferrer"><GithubIcon></GithubIcon></Link>}
-                    {project.link && <Link to={project.link} target="_blank" rel="noopener noreferrer"><ExternalLinkIcon></ExternalLinkIcon></Link>}
+                    {project.repository && <Link to={project.repository} target="_blank" rel="noopener noreferrer"><GithubIcon className="transform hover:scale-110 transition-transform duration-300"></GithubIcon></Link>}
+                    {project.link && <Link to={project.link} target="_blank" rel="noopener noreferrer"><ExternalLinkIcon className="transform hover:scale-110 transition-transform duration-300"></ExternalLinkIcon></Link>}
                 </CardFooter>
             </Card>
         </>
